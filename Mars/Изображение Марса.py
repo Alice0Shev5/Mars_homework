@@ -23,7 +23,7 @@ def advertising():
     return '</br>'.join(text)
 
 
-@app.route('/image_sample')
+@app.route('/image_mars')
 def image():
     return render_template('Изображение Марса.html')
 

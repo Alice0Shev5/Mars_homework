@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          crossorigin="anonymous">
+    <title>Тренировки в полёте</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#"><h1>Миссия колонизация Марса</h1></a>
+        <a class="navbar-brand" href="#">Mars One</a>
+    </nav>
+</header>
+
+<h4 style="color:#DCDCDC">И на Марсе будут яблони цвести!</h4>
+
+{% if prof in ['инженер', 'строитель'] %}
+        <div><h3 align="center">Инженерные тренажеры</h3></div>
+        <img src='/static/img/ingener.jpg' height="800" alt="Иллюстрация" align="center">
+ {% else %}
+       <div><h3 align="center">Научные симуляторы </h3></div>
+       <img src='/static/img/nauka.jpg' alt="Иллюстрация" align="center">
+ {% endif %}
+</body>
+</html>
